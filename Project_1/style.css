@@ -1,0 +1,65 @@
+@import url('http://fonts.cdnfonts.com/css/subpear');
+                                                
+
+.container{
+    width: 85%;
+    margin: auto;
+    background: #ffffff;
+    font-family: 'Subpear', sans-serif;
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-gap: 8px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "hd hd hd hd hd hd hd"
+    "sd main main main main main main"
+    "ft ft ft ft ft ft ft";
+    
+    /*border: 2px solid #363237; */
+}
+    .box{
+        border: 2px solid #181717;
+        padding: 12px;
+        }
+      .header{
+        grid-area:hd;
+        font-size: 1.4em;
+        color: #acacac
+      }
+      .footer{
+        grid-area:ft;
+        background-color: #C23636;
+        color: #ffffff;
+        border: 2px solid #363237;
+        font-size: 1.475em;
+      }
+      .sidebar{
+        grid-area:sd;
+        font-size: 1.1em;
+        
+      }
+      .content{
+        grid-area:main;
+      }
+
+      /* unvisited link */
+a:link {
+    color: rgb(100, 98, 98);
+    text-decoration: none;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: rgb(100, 98, 98);
+    text-decoration: none;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: #C23636;
+  }
+  
+  /* selected link */
+  a:active {
+    color: blue;
+  }
